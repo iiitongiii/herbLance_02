@@ -3,6 +3,11 @@
     --darkGrey:#596066;
 }
 
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -68,7 +73,8 @@
     transform: translateX(-20%);
     top: 200px;
     width: 100%;
-}
+    opacity: 0;
+} 
 
 .KV{
     position: absolute;
@@ -84,14 +90,15 @@
     position: absolute;
     z-index: -1;
     box-shadow: 5px 5px 20px 4px rgba(0,0,0,0.01);
-    transform: translateZ(-50px);
-    transition: 0.5s;
+    transform: translateZ(-60px);
+    
     background: radial-gradient(circle, rgba(198,221,226,1) 0%, rgba(198,221,226,1) 100%);
 }
 
 .circle:hover {
     box-shadow: 5px 5px 20px 4px rgba(0,0,0,0.2);
     background: radial-gradient(circle, rgba(209,227,232,1) 0%, rgba(198,221,226,1) 100%);
+    transition: 0.5s;
 }
 
 .slogan {

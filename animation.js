@@ -1,4 +1,5 @@
 var timeline = gsap.timeline({});
+timeline.to(".banner", {duration:0.1, opacity:1 });
 timeline.from(".logo", {duration:0.5, opacity:0, y:50});
 timeline.from(".nav ul li", {stagger:0.1,duration:0.5, opacity:0, y:50},"-=0.5");
 timeline.from(".circle", {duration:1,opacity:0,scale:0},"-=0.2");
@@ -7,7 +8,7 @@ timeline.from(".slogan", {duration:1, opacity:0,y:20},"-=0.3");
 
 gsap.registerPlugin(ScrollTrigger)
 gsap.from(".aboutUs", {
-    y:"-100px",
+    y:"100px",
     opacity: 0,
     duration:1.5, 
     scrollTrigger: {
@@ -19,7 +20,7 @@ gsap.from(".aboutUs", {
 })
 
 gsap.from(".news", {
-    y:"-100px",
+    y:"100px",
     opacity: 0,
     duration:1.5, 
     scrollTrigger: {
@@ -31,7 +32,7 @@ gsap.from(".news", {
 })
 
 gsap.from(".footer", {
-    y:"-100px",
+    y:"100px",
     opacity: 0,
     duration:1.5, 
     scrollTrigger: {
